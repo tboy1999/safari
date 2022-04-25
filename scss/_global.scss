@@ -1,0 +1,47 @@
+html {
+  font-size: 10px;
+  line-height: 1;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+.facenter {
+  display: flex;
+  align-items: center;
+}
+
+.facb {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap64 {
+  gap: 64px 0
+}
+
+.gap80 {
+  gap: 0 80px
+}
+
+.gap20 {
+  gap: 0 20px
+}
