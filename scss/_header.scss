@@ -4,8 +4,8 @@
   left: 0;
   right: 0;
   z-index: 99999;
+  background-color: $header-background-color;
   &__container {
-    background-color: $header-background-color;
     height: 70px;
     padding: 0 144px;
   }
@@ -26,8 +26,8 @@
     transition: all 0.2s linear;
     position: relative;
     &::after {
-      position: absolute;
       content: "";
+      position: absolute;
       width: 0;
       left: auto;
       right: 0;
@@ -48,15 +48,7 @@
       color: $primary-color;
       font-weight: 800;
       &::after {
-        position: absolute;
-        content: "";
         width: 100%;
-        left: auto;
-        right: 0;
-        bottom: 0;
-        height: 1px;
-        transition: all 0.2s linear;
-        background-color: red;
       }
     }
   }
