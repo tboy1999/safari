@@ -14,7 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
   <link rel="stylesheet" href="./css/grid.css">
-  <link rel="stylesheet" href="./css/app.min.css">
+  <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
     <header id="header" class="header">
@@ -55,7 +55,7 @@
           </a>
         </div>
         <div class="slider__item">
-            <a href="#" class="slider__item-wrap flex-column flex-center" style="background-color: rgba(255, 0, 179, 0.548)">
+            <a href="#" class="slider__item-wrap flex-column flex-center">
               <div class="slider__logo facenter">
                 <img src="./image/slider/slider-Logo.svg" alt="">
               </div>
@@ -274,9 +274,9 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__container d-flex">
+        <div class="footer__container d-flex fz12">
           <div class="footer__logo">
-            <img src="./image/logo/Logo.svg" alt="">
+            <a href="#"><img src="./image/logo/Logo.svg" alt=""></a>
           </div>
           <div class="footer__body d-flex gap80">
             <ul class="footer__pages">
@@ -285,28 +285,38 @@
               <li class="footer__item fz12"><a href="#">Terms & Conditions</a></li>
             </ul>
             <ul class="footer__networks">
-              <li class="footer__item d-flex gap20">
-                <a href="#">
-                  <img src="./image/footer/fb.svg" alt="">
-                  <p>Facebook</p>
-                </a>
+              <li class="footer__item facenter gap20">
+                <div class="footer__icon flex-center">
+                  <a href="#" class="facenter"><img src="./image/footer/fb.svg" alt=""></a>
+                </div>
+                <p><a href="#">Facebook</a></p>
               </li>
-              <li class="footer__item d-flex gap20">
-                <a href="#">
-                  <img src="./image/footer/fb.svg" alt="">
-                  <p>Facebook</p>
-                </a>
+              <li class="footer__item facenter gap20">
+                <div class="footer__icon flex-center">
+                  <a href="#" class="facenter"><img src="./image/footer/twitter.svg" alt=""></a>
+                </div>
+                <p><a href="#">Twitter</a></p>
               </li>
-              <li class="footer__item d-flex gap20">
-                <a href="#">
-                  <img src="./image/footer/fb.svg" alt="">
-                  <p>Facebook</p>
-                </a>
+              <li class="footer__item facenter gap20">
+                <div class="footer__icon flex-center">
+                  <a href="#" class="facenter"><img src="./image/footer/instagram.svg" alt=""></a>
+                </div>
+                <p><a href="#">Instagram</a></p>
               </li>
             </ul>
-            <div class="footer__input"></div>
+            <div class="footer__input">
+              <p>Subscribe to our newsletter</p>
+              <form action="" class="facenter footer__form">
+                <input type="text" placeholder="Email Address">
+                <button type="submit">ok</button>
+              </form>
+            </div>
           </div>
-          <div class="footer__info"></div>
+          <div class="footer__info">
+            <p>Quỳnh Phụ - Thái Bình</p>
+            <p>0386924053</p>
+            <p>meotai1999@gmail.com</p>
+          </div>
         </div>
       </div>
     </footer>
