@@ -48,6 +48,7 @@ body .auto-top {
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-column {
@@ -65,4 +66,11 @@ body .auto-top {
 
 .gap20 {
   gap: 0 20px
+}
+
+.gap16 {
+  gap: 16px
+}
+.gap8 {
+  gap: 8px
 }

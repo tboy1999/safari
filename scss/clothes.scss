@@ -5,3 +5,157 @@
 @import 'header';
 @import 'footer';
 @import 'products';
+
+.clothes {
+  &__container {
+    margin: 158px 50px 128px 50px;
+  }
+  &__product {
+    padding: 32px 0 0 32px;
+  }
+  h1 {
+    margin-bottom: 64px;
+  }
+  &__heading {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    span {
+      color: #c4c4c4;
+    }
+  }
+  &__category {
+    padding-top: 16px;
+    .category__list {
+      margin-top: 24px;
+    }
+    .category__item a {
+      padding: 8px 0;
+    }
+  }
+
+  &__size {
+    .size__list {
+      margin-top: 32px;
+    }
+
+    .size__item {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 2px;
+      a {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+        width: 54px;
+        height: 32px;
+      }
+      &.size__item--active {
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+  &__color {
+    .row {
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    .col {
+      padding: 0 8px;
+    }
+    .color__list {
+      margin-top: 32px;
+      gap: 16px 0
+    }
+    .color__item {
+      display: flex;
+      gap: 0 7px;
+      a {
+        display: flex;
+        align-items: center;
+      }
+      a[style] {
+        width: 32px;
+        height: 32px;
+        border-radius: 2px;
+      }
+    }
+  }
+  &__price {
+    .price__list {
+      margin-top: 32px;
+    }
+    .price__item {
+      input {
+        width: 27px;
+        height: 27px;
+      }
+    }
+    form {
+      margin-top: 12px;
+      input {
+        width: 61px;
+        height: 28px;
+        padding-left: 8px;
+      }
+      span {
+        margin: 0 8px;
+      }
+      button {
+        padding: 5px 14px;
+        color: #fff;
+        background-color: $primary-color;
+        border-radius: 2px;
+        margin-left: 16px;
+      }
+    }
+  }
+  &__selection {
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 16px;
+    div {
+      width: 195px;
+      position: relative;
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      padding: 10px 0;
+      &:hover {
+        border-bottom: 1px solid transparent;
+        ul {
+          visibility: inherit;
+          height: 170px;
+          bottom: -170px
+        }
+      }
+    }
+    ul {
+      overflow: hidden;
+      position: absolute;
+      width: 195px;
+      height: 0;
+      visibility: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-top: 1px solid rgba(0, 0, 0, 0.25);
+      bottom: 0;
+      transition: all 0.2s linear;
+      padding-top: 5px;
+      text-align: left;
+      li {
+        a {
+          padding: 10px 0 10px 25px;
+          background-color: #fff;
+          &:hover {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+    
+  }
+  .product__item {
+    min-height: 547px
+  }
+}
