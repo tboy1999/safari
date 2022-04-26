@@ -386,6 +386,9 @@ body .auto-top {
 .clothes__category .category__list {
   margin-top: 24px;
 }
+.clothes__category .category__item.category__item--active {
+  color: #ED165F;
+}
 .clothes__category .category__item a {
   padding: 8px 0;
 }

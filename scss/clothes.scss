@@ -28,6 +28,11 @@
     .category__list {
       margin-top: 24px;
     }
+    .category__item {
+      &.category__item--active {
+        color: $primary-color;
+      }
+    }
     .category__item a {
       padding: 8px 0;
     }
