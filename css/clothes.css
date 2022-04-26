@@ -76,6 +76,7 @@ body .auto-top {
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-column {
@@ -93,6 +94,14 @@ body .auto-top {
 
 .gap20 {
   gap: 0 20px;
+}
+
+.gap16 {
+  gap: 16px;
+}
+
+.gap8 {
+  gap: 8px;
 }
 
 .fz40 {
@@ -309,6 +318,7 @@ body .auto-top {
   height: 35px;
   background-color: #FFF;
   margin: 0 auto 13px;
+  cursor: pointer;
 }
 .product__top.main__top--active {
   fill: #ED165F;
@@ -318,6 +328,179 @@ body .auto-top {
   background-color: #FFF;
   border-radius: 2px;
   gap: 0 10px;
+}
+.product__pages {
+  margin-top: 70px;
+  position: relative;
+}
+.product__pages p a {
+  padding: 20px 30px;
+  position: relative;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+.product__pages p a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: auto;
+  right: 0;
+  bottom: -2px;
+  height: 3px;
+  transition: all 0.2s linear;
+  background-color: red;
+}
+.product__pages p a:hover {
+  color: #ED165F;
+}
+.product__pages p a:hover::after {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+.product__pages p a.product__pages--active {
+  color: #ED165F;
+}
+.product__pages p a.product__pages--active::after {
+  width: 100%;
+}
+
+.clothes__container {
+  margin: 158px 50px 128px 50px;
+}
+.clothes__product {
+  padding: 32px 0 0 32px;
+}
+.clothes h1 {
+  margin-bottom: 64px;
+}
+.clothes__heading {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.clothes__heading span {
+  color: #c4c4c4;
+}
+.clothes__category {
+  padding-top: 16px;
+}
+.clothes__category .category__list {
+  margin-top: 24px;
+}
+.clothes__category .category__item a {
+  padding: 8px 0;
+}
+.clothes__size .size__list {
+  margin-top: 32px;
+}
+.clothes__size .size__item {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+.clothes__size .size__item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 54px;
+  height: 32px;
+}
+.clothes__size .size__item.size__item--active {
+  background-color: #ED165F;
+  color: #fff;
+  border: none;
+}
+.clothes__color .row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.clothes__color .col {
+  padding: 0 8px;
+}
+.clothes__color .color__list {
+  margin-top: 32px;
+  gap: 16px 0;
+}
+.clothes__color .color__item {
+  display: flex;
+  gap: 0 7px;
+}
+.clothes__color .color__item a {
+  display: flex;
+  align-items: center;
+}
+.clothes__color .color__item a[style] {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+}
+.clothes__price .price__list {
+  margin-top: 32px;
+}
+.clothes__price .price__item input {
+  width: 27px;
+  height: 27px;
+}
+.clothes__price form {
+  margin-top: 12px;
+}
+.clothes__price form input {
+  width: 61px;
+  height: 28px;
+  padding-left: 8px;
+}
+.clothes__price form span {
+  margin: 0 8px;
+}
+.clothes__price form button {
+  padding: 5px 14px;
+  color: #fff;
+  background-color: #ED165F;
+  border-radius: 2px;
+  margin-left: 16px;
+}
+.clothes__selection {
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 16px;
+}
+.clothes__selection div {
+  width: 195px;
+  position: relative;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+.clothes__selection div:hover {
+  border-bottom: 1px solid transparent;
+}
+.clothes__selection div:hover ul {
+  visibility: inherit;
+  height: 170px;
+  bottom: -170px;
+}
+.clothes__selection ul {
+  overflow: hidden;
+  position: absolute;
+  width: 195px;
+  height: 0;
+  visibility: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  bottom: 0;
+  transition: all 0.2s linear;
+  padding-top: 5px;
+  text-align: left;
+}
+.clothes__selection ul li a {
+  padding: 10px 0 10px 25px;
+  background-color: #fff;
+}
+.clothes__selection ul li a:hover {
+  background-color: #ED165F;
+  color: #fff;
+}
+.clothes .product__item {
+  min-height: 547px;
 }
 
 /*# sourceMappingURL=clothes.css.map */

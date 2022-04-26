@@ -410,6 +410,7 @@ body .auto-top {
   height: 35px;
   background-color: #FFF;
   margin: 0 auto 13px;
+  cursor: pointer;
 }
 .product__top.main__top--active {
   fill: #ED165F;
