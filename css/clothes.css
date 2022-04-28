@@ -85,15 +85,23 @@ body .auto-top {
 }
 
 .gap64 {
-  gap: 64px 0;
+  gap: 64px;
 }
 
 .gap80 {
   gap: 0 80px;
 }
 
+.gap32 {
+  gap: 32px;
+}
+
 .gap20 {
   gap: 0 20px;
+}
+
+.gap18 {
+  gap: 18px;
 }
 
 .gap16 {
@@ -102,6 +110,10 @@ body .auto-top {
 
 .gap8 {
   gap: 8px;
+}
+
+.gap4 {
+  gap: 4px;
 }
 
 .fz40 {
@@ -120,9 +132,29 @@ body .auto-top {
   font-size: 2.4rem;
   line-height: 1.4583333333;
 }
+.fz24-fw600 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.4583333333;
+}
+.fz24-fw800 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 1.4583333333;
+}
 
 .fz20 {
   font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+.fz20-fw800 {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+.fz20-fw600 {
+  font-weight: 600;
   font-size: 2rem;
   line-height: 1.15;
 }
@@ -138,6 +170,11 @@ body .auto-top {
   font-size: 1.6rem;
   line-height: 1.125;
   color: #686868;
+}
+.fz16-fw800 {
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 1.125;
 }
 
 .fz14 {
@@ -155,6 +192,12 @@ body .auto-top {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+.fz12-fw600 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #686868;
 }
 
 .fz10 {
@@ -219,6 +262,9 @@ body .auto-top {
 .header__feature {
   gap: 0 30px;
   margin-left: 40px;
+}
+.header__feature .header__feature--active {
+  fill: #ED165F;
 }
 .header__logo {
   position: absolute;

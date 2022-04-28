@@ -1,0 +1,132 @@
+@import 'reset';
+@import 'variable';
+@import 'global';
+@import 'alike';
+@import 'header';
+@import 'footer';
+
+.user {
+  margin-top: 134px;
+  margin-bottom: 370px;
+  &__container {
+    margin: 0 64px;
+  }
+  &__list {
+    height: 884px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    background-color: $primary-color;
+  }
+  &__item {
+    background-color: #fff;
+    &.user__item--prev {
+      border-radius: 0 0 26px 0;
+    }
+    &.user__item--next {
+      border-radius: 0 26px 0 0;
+    }
+    &.user__item--active {
+      background-color: transparent;
+      color: #fff;
+      fill: #fff;
+      font-weight: 800;
+    }
+  }
+  &__item:first-child {
+    padding: 32px 0;
+    text-align: center;
+  }
+  &__item:not(:first-child,:last-child) {
+    padding: 16px 0 16px 32px ;
+    cursor: pointer;
+  }
+  &__item:last-child {
+    flex: 1;
+    padding-bottom: 64px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 16px;
+    color: $primary-color;
+    cursor: pointer;
+  }
+  h3 {
+    margin-top: 25px;
+    margin-bottom: 22px;
+  }
+  .form__account-infomation {
+    padding: 58px 0 46px 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    input {
+      max-width: 350px;
+      height: 60px;
+      margin-bottom: 32px;
+      border-radius: 6px;
+      padding-left: 20px;
+      font-size: 30px;
+      border: 1px solid #000000;
+    }
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: red;
+      margin: 0
+    }
+    label {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: calc(18/14);
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: $primary-color;
+      margin-bottom: 32px;
+    }
+
+    label:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__btn {
+      padding: 12px 47px;
+      background: $primary-color;
+      color: #fff;
+      border-radius: 6px;
+      margin-top: 32px;
+    }
+  
+  &__pain {
+    display: none;
+    &.pain--active {
+      display: block;
+    }
+  }
+  &__address-book {
+    padding: 32px 32px 32px 39px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  }
+  &__address-info {
+    h4 {
+      margin-bottom: 16px;
+    }
+  }
+  &__address-link {
+    margin-top: 16px;
+    color: $primary-color;
+    justify-content: end
+  }
+  .my-orders {
+    &__product {
+      width: 459px;
+      padding: 35px 0 36px 32px;
+    }
+    &__price {
+      width: 224px
+    }
+    &__delivery {
+      flex: 1
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import 'reset';
+@import 'variable';
+@import 'global';
+@import 'alike';
+@import 'header';
+@import 'footer';
+
+.cart {
+  margin-top: 134px;
+  &__heading {
+    margin-bottom: 78px;
+  }
+  table {
+    width: 100%;
+    thead {
+      th:first-child {
+        width: 50%;
+        text-align: left;
+      }
+    }
+  }
+}

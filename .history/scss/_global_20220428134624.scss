@@ -1,0 +1,80 @@
+html {
+  font-size: 10px;
+  line-height: 1;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+body .auto-top {
+  display: none;
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  animation: autoTop 2s ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes autoTop {
+  from {
+    transform: translateY(0)
+  }
+  to {
+    transform: translateY(-20px)
+  }
+}
+
+.facenter {
+  display: flex;
+  align-items: center;
+}
+
+.facb {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap64 {
+  gap: 64px
+}
+
+.gap80 {
+  gap: 0 80px
+}
+
+.gap32 {
+  gap: 32px
+}
+
+.gap20 {
+  gap: 0 20px
+}
+
+.gap16 {
+  gap: 16px
+}
+.gap8 {
+  gap: 8px
+}

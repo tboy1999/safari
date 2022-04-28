@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>user</title>
+  <link rel="shortcut icon" href="./image/logo/Logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__container facenter">
+        <ul class="header__list facenter fz14-fw600">
+          <li class="header__item"><a href="../index.html" class="header__link">Home</a></li>
+          <li class="header__item"><a href="./clothes.html" class="header__link">Clothes</a></li>
+          <li class="header__item"><a href="./shoes.html" class="header__link">Shoes</a></li>
+          <li class="header__item"><a href="./accessories.html" class="header__link">Accessories</a></li>
+        </ul>
+        <form class="header__search facenter">
+          <input type="text" placeholder="Search..." class="fz12">
+          <button type="submit"><img src="../image/header/search.svg" alt=""></button>
+        </form>
+        <div class="header__feature facenter">
+          <a href="#" class="header__feature--active">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0C9.06087 0 10.0783 0.421427 10.8284 1.17157C11.5786 1.92172 12 2.93913 12 4C12 5.06087 11.5786 6.07828 10.8284 6.82843C10.0783 7.57857 9.06087 8 8 8C6.93913 8 5.92172 7.57857 5.17157 6.82843C4.42143 6.07828 4 5.06087 4 4C4 2.93913 4.42143 1.92172 5.17157 1.17157C5.92172 0.421427 6.93913 0 8 0ZM8 10C12.42 10 16 11.79 16 14V16H0V14C0 11.79 3.58 10 8 10Z"/>
+            </svg>
+          </a>
+          <a href="./cart.html">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.8 12.8C11.912 12.8 11.2 13.512 11.2 14.4C11.2 14.8243 11.3686 15.2313 11.6686 15.5314C11.9687 15.8314 12.3757 16 12.8 16C13.2243 16 13.6313 15.8314 13.9314 15.5314C14.2314 15.2313 14.4 14.8243 14.4 14.4C14.4 13.9757 14.2314 13.5687 13.9314 13.2686C13.6313 12.9686 13.2243 12.8 12.8 12.8ZM0 0V1.6H1.6L4.48 7.672L3.392 9.632C3.272 9.856 3.2 10.12 3.2 10.4C3.2 10.8243 3.36857 11.2313 3.66863 11.5314C3.96869 11.8314 4.37565 12 4.8 12H14.4V10.4H5.136C5.08296 10.4 5.03209 10.3789 4.99458 10.3414C4.95707 10.3039 4.936 10.253 4.936 10.2C4.936 10.16 4.944 10.128 4.96 10.104L5.68 8.8H11.64C12.24 8.8 12.768 8.464 13.04 7.976L15.904 2.8C15.96 2.672 16 2.536 16 2.4C16 2.18783 15.9157 1.98434 15.7657 1.83431C15.6157 1.68429 15.4122 1.6 15.2 1.6H3.368L2.616 0H0ZM4.8 12.8C3.912 12.8 3.2 13.512 3.2 14.4C3.2 14.8243 3.36857 15.2313 3.66863 15.5314C3.96869 15.8314 4.37565 16 4.8 16C5.22435 16 5.63131 15.8314 5.93137 15.5314C6.23143 15.2313 6.4 14.8243 6.4 14.4C6.4 13.9757 6.23143 13.5687 5.93137 13.2686C5.63131 12.9686 5.22435 12.8 4.8 12.8Z"/>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="inherit"           
+            xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.7307 1.39307C13.9025 0.494751 12.766 0 11.5304 0C10.6068 0 9.76099 0.291992 9.01636 0.867798C8.64062 1.15845 8.30017 1.51404 8 1.92908C7.69995 1.51416 7.35938 1.15845 6.98352 0.867798C6.23901 0.291992 5.39319 0 4.4696 0C3.23401 0 2.09741 0.494751 1.26917 1.39307C0.450806 2.28088 0 3.49377 0 4.80847C0 6.16162 0.504272 7.40027 1.58691 8.70667C2.55542 9.87524 3.94739 11.0615 5.55933 12.4352C6.10974 12.9043 6.73364 13.436 7.38147 14.0024C7.55261 14.1523 7.77222 14.2349 8 14.2349C8.22766 14.2349 8.44739 14.1523 8.61829 14.0027C9.26611 13.4362 9.89038 12.9042 10.441 12.4348C12.0527 11.0614 13.4447 9.87524 14.4132 8.70654C15.4958 7.40027 16 6.16162 16 4.80835C16 3.49377 15.5492 2.28088 14.7307 1.39307Z"/>
+            </svg>                
+          </a>
+        </div>
+        <div class="header__logo">
+          <a href="../index.html"><img src="../image/logo/Logo.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main id="user" class="user">
+    <div class="container">
+      <div class="user__container">
+        <div class="row">
+          <div class="col xxl-3">
+            <div class="user__list flex-column">
+              <div class="user__item fz16-fw800 user__item--prev">ACCOUNT DASHBOARD</div>
+              <div class="user__item user__tag facenter gap18 fz14 user__item--active">
+                <svg width="14" height="17" viewBox="0 0 14 17" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.89428 8.08322C8.00476 8.08322 8.96635 7.68493 9.75204 6.89912C10.5377 6.11343 10.936 5.15209 10.936 4.04148C10.936 2.93125 10.5377 1.96979 9.75191 1.18384C8.9661 0.398284 8.00463 0 6.89428 0C5.78366 0 4.82233 0.398284 4.03664 1.18397C3.25095 1.96966 2.85254 2.93112 2.85254 4.04148C2.85254 5.15209 3.25095 6.11356 4.03677 6.89924C4.82258 7.6848 5.78405 8.08322 6.89428 8.08322Z"/>
+                  <path d="M13.9661 12.9033C13.9434 12.5764 13.8976 12.2197 13.8301 11.843C13.762 11.4636 13.6743 11.1049 13.5693 10.777C13.4609 10.4381 13.3134 10.1034 13.1311 9.78274C12.9419 9.44988 12.7196 9.16003 12.4702 8.92152C12.2094 8.672 11.8902 8.47139 11.5209 8.32506C11.153 8.17949 10.7452 8.10575 10.3091 8.10575C10.1378 8.10575 9.97209 8.17603 9.65216 8.38433C9.45526 8.51274 9.22494 8.66125 8.96787 8.8255C8.74805 8.96556 8.45026 9.09679 8.08245 9.21559C7.72359 9.33171 7.35924 9.3906 6.99962 9.3906C6.63999 9.3906 6.27576 9.33171 5.91653 9.21559C5.5491 9.09692 5.25131 8.96569 5.03175 8.82563C4.77711 8.66291 4.54666 8.5144 4.34682 8.3842C4.02727 8.17591 3.86148 8.10562 3.69018 8.10562C3.25387 8.10562 2.84624 8.17949 2.47843 8.32518C2.10946 8.47126 1.79004 8.67187 1.529 8.92165C1.27973 9.16029 1.05736 9.45001 0.868391 9.78274C0.686212 10.1034 0.538727 10.438 0.430163 10.7771C0.32531 11.105 0.237614 11.4636 0.169505 11.843C0.102036 12.2192 0.0562028 12.576 0.0335425 12.9037C0.0112662 13.2248 0 13.5581 0 13.8946C0 14.7706 0.278453 15.4797 0.827551 16.0027C1.36986 16.5188 2.08744 16.7806 2.96006 16.7806H11.0399C11.9126 16.7806 12.6299 16.5189 13.1723 16.0027C13.7215 15.4801 14 14.7708 14 13.8945C13.9999 13.5564 13.9885 13.2229 13.9661 12.9033Z"/>
+                  </svg>
+                  
+                Account Information
+              </div>
+              <div class="user__item user__tag facenter gap18 fz14 user__item--next">
+                <svg width="14" height="17" viewBox="0 0 14 17" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.00448 5.0538H0.470852C0.210816 5.0538 0 5.26462 0 5.52465C0 5.78469 0.210816 5.99551 0.470852 5.99551H1.00448V5.0538Z"/>
+                  <path d="M1.00448 12.5874H0.470852C0.210816 12.5874 0 12.7982 0 13.0583C0 13.3183 0.210816 13.5291 0.470852 13.5291H1.00448V12.5874Z"/>
+                  <path d="M1.00448 10.0762H0.470852C0.210816 10.0762 0 10.287 0 10.5471C0 10.8071 0.210816 11.0179 0.470852 11.0179H1.00448V10.0762Z"/>
+                  <path d="M1.00448 7.56503H0.470852C0.210816 7.56503 0 7.77585 0 8.03588C0 8.29592 0.210816 8.50674 0.470852 8.50674H1.00448V7.56503Z"/>
+                  <path d="M1.00448 2.5426H0.470852C0.210816 2.5426 0 2.75342 0 3.01345C0 3.27349 0.210816 3.48431 0.470852 3.48431H1.00448V2.5426Z"/>
+                  <path d="M4.01834 0H2.41744C1.63856 0 1.00488 0.633673 1.00488 1.41256V2.5426H2.48022C2.74025 2.5426 2.95107 2.75342 2.95107 3.01345C2.95107 3.27349 2.74025 3.4843 2.48022 3.4843C2.05168 3.4843 1.466 3.4843 1.00488 3.4843V5.05381H2.48022C2.74025 5.05381 2.95107 5.26463 2.95107 5.52466C2.95107 5.7847 2.74025 5.99552 2.48022 5.99552C1.71562 5.99552 2.16255 5.99552 1.00488 5.99552V7.56502H2.48022C2.74025 7.56502 2.95107 7.77584 2.95107 8.03587C2.95107 8.29591 2.74025 8.50673 2.48022 8.50673C2.05168 8.50673 1.466 8.50673 1.00488 8.50673V10.0762H2.48022C2.74025 10.0762 2.95107 10.287 2.95107 10.5471C2.95107 10.8071 2.74025 11.0179 2.48022 11.0179C1.71562 11.0179 2.16255 11.0179 1.00488 11.0179V12.5874H2.48022C2.74025 12.5874 2.95107 12.7983 2.95107 13.0583C2.95107 13.3183 2.74025 13.5291 2.48022 13.5291C2.05168 13.5291 1.466 13.5291 1.00488 13.5291V14.6592C1.00488 15.4381 1.63856 16.0717 2.41744 16.0717H4.01834V0Z"/>
+                  <path d="M7.94141 3.48431H10.0759V4.55158H7.94141V3.48431Z"/>
+                  <path d="M12.5878 0H4.95996V16.0717H12.5878C13.3666 16.0717 14.0003 15.4381 14.0003 14.6592V1.41256C14.0003 0.633673 13.3666 0 12.5878 0ZM11.0183 5.02242C11.0183 5.28246 10.8074 5.49327 10.5474 5.49327H7.47117C7.21114 5.49327 7.00032 5.28246 7.00032 5.02242V3.01345C7.00032 2.75342 7.21114 2.5426 7.47117 2.5426H10.5474C10.8074 2.5426 11.0183 2.75342 11.0183 3.01345V5.02242Z"/>
+                  </svg>
+                  
+                Address Book
+              </div>
+              <div class="user__item user__tag facenter gap18 fz14">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.0869 2.71463H12.0679C12.2023 2.5019 12.291 2.2631 12.3163 2.01056C12.3971 1.20345 11.972 0.479938 11.2484 0.159169C10.5832 -0.135678 9.83572 -0.0151468 9.29746 0.473048L8.01066 1.63926C7.76006 1.36516 7.39981 1.1929 6.99999 1.1929C6.59946 1.1929 6.23863 1.36571 5.98797 1.64065L4.69953 0.472911C4.1604 -0.0152835 3.4132 -0.13535 2.74834 0.159333C2.02488 0.48013 1.59974 1.20389 1.68079 2.01097C1.70614 2.26332 1.79479 2.502 1.92918 2.71463H0.913033C0.408761 2.71463 0 3.12342 0 3.62766V4.99723C0 5.24934 0.204394 5.45376 0.45653 5.45376H13.5435C13.7956 5.45376 14 5.24936 14 4.99723V3.62766C14 3.12342 13.5912 2.71463 13.0869 2.71463ZM5.63042 2.56246V2.71463H3.48277C2.91533 2.71463 2.46875 2.18564 2.61048 1.59485C2.6729 1.33467 2.8607 1.11289 3.10359 1.00062C3.43713 0.846453 3.8066 0.895945 4.08673 1.1495L5.63081 2.54901C5.63072 2.55352 5.63042 2.55795 5.63042 2.56246ZM11.4104 1.88934C11.3763 2.36384 10.9477 2.71468 10.472 2.71468H8.36955V2.56252C8.36955 2.55713 8.36922 2.5518 8.36917 2.54641C8.71895 2.22933 9.47776 1.54158 9.88931 1.16853C10.1232 0.956539 10.4505 0.857582 10.753 0.947816C11.1872 1.07732 11.4421 1.44651 11.4104 1.88934Z"/>
+                  <path d="M0.913086 6.36679V13.0624C0.913086 13.5667 1.32185 13.9755 1.82612 13.9755H6.08698V6.36679H0.913086Z"/>
+                  <path d="M7.91309 6.36679V13.9755H12.1739C12.6782 13.9755 13.087 13.5667 13.087 13.0624V6.36679H7.91309Z"/>
+                  </svg>
+                  
+                My Orders
+              </div>
+              <div class="user__item user__tag facenter gap18 fz14">
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8894 1.21893C12.1647 0.432907 11.1702 0 10.0891 0C9.28096 0 8.54086 0.255493 7.88931 0.759323C7.56055 1.01364 7.26265 1.32478 7 1.68794C6.73746 1.32489 6.43945 1.01364 6.11058 0.759323C5.45914 0.255493 4.71904 0 3.9109 0C2.82976 0 1.83524 0.432907 1.11052 1.21893C0.394455 1.99577 0 3.05705 0 4.20741C0 5.39142 0.441238 6.47523 1.38855 7.61833C2.23599 8.64084 3.45396 9.67883 4.86441 10.8808C5.34602 11.2913 5.89194 11.7565 6.45879 12.2521C6.60854 12.3833 6.80069 12.4555 7 12.4555C7.1992 12.4555 7.39146 12.3833 7.541 12.2523C8.10785 11.7566 8.65408 11.2912 9.13591 10.8805C10.5461 9.67873 11.7641 8.64084 12.6116 7.61823C13.5589 6.47523 14 5.39142 14 4.20731C14 3.05705 13.6055 1.99577 12.8894 1.21893Z"/>
+                  </svg>
+                My Favorites
+              </div>
+              <div class="user__item fz16"><img src="../image/user/checkout.svg" alt="">SIGN OUT</div>
+            </div>
+          </div>
+          <div class="col xxl-9">
+            <div class="user__pain">
+              <form action="">
+                <h3 class="fz24">User Information</h3>
+                <div class="form__account-infomation flex-column">
+                  <label for="first-name">First name</label>
+                  <input type="text" id="first-name">
+                  <label for="last-name">Last name</label>
+                  <input type="text" id="last-name">
+                  <label for="email">Email</label>
+                  <input type="text" id="email">
+                  <label for="create-password">Gender</label>
+                  <input type="text" id="create-password">
+                  <label for="confirm-password">Date of birth</label>
+                  <input type="text" id="confirm-password">
+                  <a href="#" class="fz16">Change password</a>
+                  <label class="facenter gap8">
+                    <input type="checkbox" checked="checked">
+                    Newsletter subsciption
+                  </label>
+                </div>
+                <button type="submit" class="fz18 user__btn user__btn-active">save changes</button>
+              </form>
+            </div>
+            <div class="user__pain">
+              <h3 class="fz24">Address Book</h3>
+              <div class="user__address-book">
+                <div class="user__address-info">
+                  <h4 class="fz20">Default Shipping Address</h4>
+                  <ul class="flex-column gap4">
+                    <li class="fz14">Ayokunle Oriolowo</li>
+                    <li class="fz14">No 4 Barnawa Close, Barnawa, Kaduna</li>
+                    <li class="fz14">Kaduna, Kaduna</li>
+                    <li class="fz14">Nigeria</li>
+                    <li class="fz14">+234 708 568 5878</li>
+                  </ul>
+                </div>
+                <div class="user__address-link facenter gap64">
+                  <a href="" class="fz14">Edit</a><a href="" class="fz14">Delete</a>
+                </div>
+              </div>
+              <button class="fz18 user__btn user__btn--active">ADD NEW ADDRESS</button>
+            </div>
+            <div class="user__pain pain--active">
+              <h3 class="fz24">My Orders</h3>
+              <div class="my-orders">
+                <div class="my-orders__info d-flex">
+                  <div class="my-orders__product facenter gap32">
+                    <div class="my-orders__left flex-column gap16">
+                      <img src="../image/cart/cart1.jpg" alt="">
+                      <span class="fz12">Delivered</span>
+                    </div>
+                    <div class="my-orders__right flex-column gap8">
+                      <h4 class="fz20">Casual flat loafers</h4>
+                      <p class="fz16">Size - EU: 36 US: 5.5</p>
+                      <span class="fz14">₦ 10,000</span>
+                      <p class="fz14">Qty: 1</p>
+                      <p class="fz12">On 20/07/2020</p>
+                    </div>
+                  </div>
+                  <div class="my-orders__price">
+                    <h5 class="fz16">Payment details</h5>
+                    <p class="fz12-fw600">Item’s total - ₦ 10,000 </p>
+                    <p class="fz12-fw600">Delivery fee - ₦ 2,000  </p>
+                    <p class="fz12-fw600">TOTAL - ₦ 12,000  </p>
+                  </div>
+                  <div class="my-orders__delivery">
+                    <div class="my-orders__top">
+                      <h5 class="fz16">Delivery method</h5>
+                      <p class="fz12">Door delivery</p>
+                    </div>
+                    <div class="my-orders__body">
+                      <h5 class="fz16">Shipping address</h5>
+                      <p class="fz12">Ayokunle Oriolowo <br />
+                        4, Barnawa Close, Barnawa Kaduna. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-orders">
+                <div class="my-orders__info d-flex">
+                  <div class="my-orders__product facenter gap32">
+                    <div class="my-orders__left flex-column gap16">
+                      <img src="../image/cart/cart1.jpg" alt="">
+                      <span class="fz12">Delivered</span>
+                    </div>
+                    <div class="my-orders__right flex-column gap8">
+                      <h4 class="fz20">Casual flat loafers</h4>
+                      <p class="fz16">Size - EU: 36 US: 5.5</p>
+                      <span class="fz14">₦ 10,000</span>
+                      <p class="fz14">Qty: 1</p>
+                      <p class="fz12">On 20/07/2020</p>
+                    </div>
+                  </div>
+                  <div class="my-orders__price">
+                    <h5 class="fz16">Payment details</h5>
+                    <p class="fz12-fw600">Item’s total - ₦ 10,000 </p>
+                    <p class="fz12-fw600">Delivery fee - ₦ 2,000  </p>
+                    <p class="fz12-fw600">TOTAL - ₦ 12,000  </p>
+                  </div>
+                  <div class="my-orders__delivery">
+                    <div class="my-orders__top">
+                      <h5 class="fz16">Delivery method</h5>
+                      <p class="fz12">Door delivery</p>
+                    </div>
+                    <div class="my-orders__body">
+                      <h5 class="fz16">Shipping address</h5>
+                      <p class="fz12">Ayokunle Oriolowo <br />
+                        4, Barnawa Close, Barnawa Kaduna. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container d-flex fz12">
+        <div class="footer__logo">
+          <a href="../index.html"><img src="../image/logo/Logo.svg" alt=""></a>
+        </div>
+        <div class="footer__body d-flex gap80">
+          <ul class="footer__pages">
+            <li class="footer__item fz12"><a href="#">About Us</a></li>
+            <li class="footer__item fz12"><a href="#">Contact</a></li>
+            <li class="footer__item fz12"><a href="#">Terms & Conditions</a></li>
+          </ul>
+          <ul class="footer__networks">
+            <li class="footer__item facenter gap20">
+              <div class="footer__icon flex-center">
+                <a href="#" class="facenter"><img src="../image/footer/fb.svg" alt=""></a>
+              </div>
+              <p><a href="#">Facebook</a></p>
+            </li>
+            <li class="footer__item facenter gap20">
+              <div class="footer__icon flex-center">
+                <a href="#" class="facenter"><img src="../image/footer/twitter.svg" alt=""></a>
+              </div>
+              <p><a href="#">Twitter</a></p>
+            </li>
+            <li class="footer__item facenter gap20">
+              <div class="footer__icon flex-center">
+                <a href="#" class="facenter"><img src="../image/footer/instagram.svg" alt=""></a>
+              </div>
+              <p><a href="#">Instagram</a></p>
+            </li>
+          </ul>
+          <div class="footer__input">
+            <p>Subscribe to our newsletter</p>
+            <form action="" class="facenter footer__form">
+              <input type="text" placeholder="Email Address">
+              <button type="submit">ok</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__info">
+          <p>Quỳnh Phụ - Thái Bình</p>
+          <p>0386924053</p>
+          <p>meotai1999@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/user.js"></script>
+</body>
+</html>
