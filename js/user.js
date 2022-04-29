@@ -14,5 +14,16 @@ userTags.forEach((userTag, index) => {
     userPains[index].classList.add('pain--active')
     userItems[index].classList.add('user__item--prev')
     userItems[index+2].classList.add('user__item--next')
+    userToggle.classList.remove('toggle--active')
+    userList.classList.remove('user__list--active')
+
   }
 })
+
+const userToggle = document.querySelector('.user__item-toggle')
+const userList = document.querySelector('.user__list')
+
+userToggle.onclick = () => {
+  userToggle.classList.toggle('toggle--active')
+  userList.classList.toggle('user__list--active')
+}

@@ -64,9 +64,9 @@
   &__feature {
     gap: 0 30px;
     margin-left: 40px;
-    .header__feature--active {
-      fill: $primary-color;
-    }
+  }
+  .header__feature--active {
+    fill: $primary-color;
   }
   &__logo {
     position: absolute;
@@ -110,6 +110,7 @@
 @media screen and (max-width: 767.98px) {
   .header {
     &__container {
+      height: 50px;
       justify-content: space-between;
     }
     &__logo {

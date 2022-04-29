@@ -104,3 +104,29 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 1023.98px) {
+  .cart__table {
+    overflow-x: auto;
+  }
+
+  .cart table tbody td {
+    padding:30px !important;
+  }
+  .cart {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  
+  .cart__button {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+    button {
+      width: 60%
+    }
+  }
+}
+
