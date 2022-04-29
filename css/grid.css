@@ -18,6 +18,8 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+/* xs */
 @media screen and (max-width: 575.98px) {
 
     .row {
@@ -142,7 +144,7 @@
 }
 
 
-
+/* sm */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .row {
         margin-left: -6px;
@@ -252,11 +254,11 @@
     }
 }
 
-/* >= Tablet */
+/* md*/
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
     .container {
-        width: 644px;
+        /* width: 644px; */
     }
     .row {
         margin-left: -8px;
@@ -366,7 +368,7 @@
     }
 }
 
-/* > PC low resolution */
+/* lg */
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
     .container {
@@ -485,7 +487,7 @@
     }
 }
 
-
+/* xl */
 @media (min-width: 1280px) and (max-width: 1535.98px) {
     .container {
         width: 1200px;
@@ -603,6 +605,7 @@
     }
 }
 
+/* xxl */
 @media (min-width: 1536px) {
     .container {
         width: 1440px;

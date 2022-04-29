@@ -51,5 +51,29 @@
       text-decoration: underline;
     }
   }
-    
 }
+
+@media screen and (max-width: 1535.98px) {
+  .user__container {
+    margin: 0
+  }
+}
+
+@media screen and (max-width: 1279.98px) {
+  .user__top {
+    padding-left: 30px;
+  }
+  .user__signin {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .row {
+    gap: 20px 0
+  }
+  .user {
+    margin-bottom: 50px;
+  }
+}
+

@@ -21,6 +21,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     span {
       color: #c4c4c4;
+      cursor: pointer;
     }
   }
   &__category {
@@ -162,5 +163,116 @@
   }
   .product__item {
     min-height: 547px
+  }
+  &__close {
+    display: none
+  }
+  &__sidebar-menu {
+    display: none
+  }
+}
+
+
+@media screen and (max-width: 1023.98px) {
+  .clothes__container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .clothes__price form {
+    flex-direction: column;
+    gap: 10px;
+    input {
+      width: 50%
+    }
+  }
+  .clothes__price form button {
+    margin: 0;
+    width: 50%
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .clothes__product {
+    padding: 0;
+    padding-top: 32px;
+  }
+  .clothes__sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 80%;
+    background-color: #fff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 2%;
+    padding: 0 2%;
+    padding-top: 10px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.4s linear;
+    z-index: 2;
+    &--active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .clothes__color,
+    .clothes__price,
+    .clothes__size,
+    .clothes__category {
+      flex-basis: 49%;
+    }
+    .category__list{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .category__item {
+      flex-basis: 50%;
+    }
+    .clothes__color {
+      padding-top: 16px;
+    };
+    .clothes__price {
+      padding-top: 16px;
+    };
+    .clothes__size {
+      padding-top: 16px;
+    };
+    .clothes__price form input {
+      width: 50px
+    }
+    .clothes__close {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 30px;
+    }
+  }
+  .clothes__sidebar-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    };
+  }
+  .clothes__selection {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .clothes__sidebar {
+    display: none;
+  }
+  .clothes__product {
+    padding: 0;
+    padding-top: 32px;
   }
 }

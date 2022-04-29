@@ -35,4 +35,30 @@
   
 }
 
+@media screen and (max-width: 1535.98px) {
+  .main__info h1::after,
+  .main__info h1::before {
+    width: 330px
+  }
+}
 
+@media screen and (max-width: 1279.98px) {
+  .main__info h1::after,
+  .main__info h1::before {
+    width: 260px
+  }
+  .main__product {
+    padding: 60px 0 0 0;
+  }
+  .main__info p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .main__info h1::after,
+  .main__info h1::before {
+    display: none
+  }
+}

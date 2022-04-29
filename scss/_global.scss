@@ -57,7 +57,10 @@ body .auto-top {
 }
 
 .gap64 {
-  gap: 64px
+  gap: 64px 0;
+}
+.gap64-column {
+  gap: 0 64px;
 }
 
 .gap80 {
